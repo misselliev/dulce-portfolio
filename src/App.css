@@ -257,7 +257,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 160px 0 100px 0;
+  padding: 160px 0 50px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -270,6 +270,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   font-size: 20px;
   font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .banner-img {
+    margin-top: 2rem !important;
+  }
 }
 .banner .tagline {
   font-weight: 700;
@@ -420,6 +426,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   margin: 40px;
 }
+
+.project-slider {
+  width: 100% !important;
+  margin: 0 auto;
+  position: relative;
+}
+.project-slider .card {
+  width: 80% !important;
+  margin: 0 auto 15px auto;
+}
+
+@media (max-width: 500px) {
+  .project-slider .card {
+    width: 100% !important;
+    margin: 0 auto 20px auto;
+  }
+}
 .project h2 {
   font-size: 45px;
   font-weight: 700;
@@ -440,6 +463,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .project-links {
   display: flex;
   justify-content: space-between;
+  align-items: end;
 }
 
 .project .project-links a {
@@ -463,9 +487,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .card-img-top {
   height: 250px;
+  /* height: 165px; */
 }
 
 .card {
+  height: 400px !important;
   height: 29rem !important;
 }
 

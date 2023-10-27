@@ -73,19 +73,41 @@ export const Banner = () => {
                     {`Hi! I'm Eli`} <br />
                     <span
                       className="txt-rotate"
-                      dataPeriod="700"
+                      dataperiod="700"
                       data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
+                    Bienvenidos! 🌟 As a bilingual frontend engineer with 5+
+                    years of experience, I thrive in the world of web
+                    development by building user-centric applications. My
+                    passion lies in leveraging the power of React to create
+                    intuitive, responsive, and scalable interfaces. <br />
+                    <br />
+                    {/* I&apos;ve honed my skills working collaboratively with
+                    distributed teams across different time zones, making
+                    asynchronous communication and project coordination second
+                    nature. This experience has taught me the importance of
+                    clear communication and adaptability, both essential
+                    qualities for thriving in a dynamic tech environment.
+                    <br /> */}
+                    Whether it&apos;s crafting elegant user interfaces,
+                    optimizing performance, or ensuring seamless cross-cultural
+                    collaboration, I&apos;m dedicated to delivering high-quality
+                    solutions.
+                    {/* If you&apos;re looking for a versatile engineer
+                    who bridges the gap between technology and global markets,
+                    let&apos;s connect and explore how I can contribute to your
+                    team&apos;s success.  */}
+                    <br />
+                    <br />
+                    ¡Hablemos y trabajemos juntos! 💻🚀
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <a href="mailto:elizabeth.villalejos@gmail.com?subject=Lets%20Connect">
                     Let’s Connect <FaRegArrowAltCircleRight size={25} />
-                  </button>
+                  </a>
                 </div>
               )}
             </TrackVisibility>

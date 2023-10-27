@@ -14,8 +14,12 @@ function ProjectCard(project) {
         <ListGroup.Item>{stack}</ListGroup.Item>
       </ListGroup>
       <Card.Body className="project-links">
-        <Card.Link href={live}>Demo Link</Card.Link>
-        <Card.Link href={link}>Source Link</Card.Link>
+        <Card.Link href={live} target="_blank" rel="noopener noreferrer">
+          Demo Link
+        </Card.Link>
+        <Card.Link href={link} target="_blank" rel="noopener noreferrer">
+          Source Link
+        </Card.Link>
       </Card.Body>
     </Card>
   );

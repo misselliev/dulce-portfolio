@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import "animate.css";
@@ -106,7 +106,9 @@ export const Banner = () => {
                     ¡Hablemos y trabajemos juntos! 💻🚀
                   </p>
                   <a href="mailto:elizabeth.villalejos@gmail.com?subject=Lets%20Connect">
-                    Let’s Connect <FaRegArrowAltCircleRight size={25} />
+                    <Button variant="outline-light">
+                      Let’s Connect <FaRegArrowAltCircleRight size={25} />
+                    </Button>
                   </a>
                 </div>
               )}

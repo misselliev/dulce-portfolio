@@ -4,7 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 function ProjectCard(project) {
   const { title, image, subtitle, stack, link, live } = project.project;
   return (
-    <Card>
+    <Card border="dark" bg="light" text="dark" className="shadow p-3 mb-3">
       <Card.Header as="h5">{title}</Card.Header>
       <Card.Img variant="top" src={image} />
       <Card.Body>

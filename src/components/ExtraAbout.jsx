@@ -1,12 +1,15 @@
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import UFO from "../assets/img/UFO.svg";
+import { FaFilePdf } from "react-icons/fa";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { useResponsiveRender } from "../utils/useResponsiveRender";
 
 export const ExtraAbout = () => {
+  const { renderMobile } = useResponsiveRender({ breakpoint: 767 });
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -57,10 +60,10 @@ export const ExtraAbout = () => {
   };
 
   return (
-    <section className="banner" id="home">
+    <section className="about">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={5} className="banner-img">
+          <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -68,10 +71,34 @@ export const ExtraAbout = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={UFO} alt="About Img" />
                 </div>
               )}
             </TrackVisibility>
+            {!renderMobile && (
+              <div className="about-btn">
+                <a
+                  href="https://drive.google.com/file/d/1UGhypHMJiw5DFfbtGWdtgPNg-YC9s93q/view?usp=share_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline-light">
+                    Download my CV
+                    <FaFilePdf size={25} />
+                  </Button>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1Hxr1zkIIntRzVSyCQYVh6cT7C_bFHNog/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline-light">
+                    Review my last recommendation
+                    <FaFilePdf size={25} />
+                  </Button>
+                </a>
+              </div>
+            )}
           </Col>
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
@@ -81,43 +108,72 @@ export const ExtraAbout = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                  <h1>
-                    {/* {`Hi! I'm Eli`} <br /> */}
-                    {/* <span
-                      className="txt-rotate"
-                      dataperiod="700"
-                      data-rotate="[✨Superpowers ✨]"
-                    > */}
-                    <span className="wrap">✨Superpowers ✨</span>
-                    {/* </span> */}
-                  </h1>
-                  <p>
-                    ✅Proficient in React.js, JavaScript, and Redux for building
-                    dynamic, responsive user interfaces.
-                    <br /> ✅Experienced in Scrum for agile project
-                    collaboration and effective software development. <br />
-                    ✅Dedicated to maintaining code quality through Unit Testing
-                    and continuous refactoring. <br />
-                    ✅Skilled in UI design using modern CSS frameworks like
-                    Tailwind CSS, Material-UI and custom CSS, ensuring
-                    pixel-perfect, mobile-first designs. <br />
-                    ✅Responsive Web Design expertise for optimal cross-device
-                    user experiences. <br />
-                    ✅Proficient in Git and version control for efficient code
-                    management and collaboration. <br />
-                    ✅Strong command of NodeJS, NextJS, and Express to create
-                    efficient and scalable web applications.
-                    <br />
-                    ✅Extensive knowledge of web development, including modern
-                    technologies and best practices. <br />✅ Quick and
-                    enthusiastic learner, adept at rapidly assimilating new
-                    technologies and best practices to stay at the forefront of
-                    web development trends.
-                  </p>
-                  <a href="mailto:elizabeth.villalejos@gmail.com?subject=Lets%20Connect">
-                    Download my CV <FaRegArrowAltCircleRight size={25} />
-                  </a>
+                  <h1>Superpowers ✨</h1>
+                  {/* <h1>Superpowers</h1> */}
+                  <ul>
+                    <li>
+                      ✅Proficient in React.js, JavaScript, and Redux for
+                      building dynamic, responsive user interfaces.
+                    </li>
+                    <li>
+                      ✅Experienced in Scrum for agile project collaboration and
+                      effective software development.
+                    </li>
+                    <li>
+                      ✅Dedicated to maintaining code quality through Unit
+                      Testing and continuous refactoring.
+                    </li>
+                    <li>
+                      ✅Skilled in UI design using modern CSS frameworks like
+                      Tailwind CSS, Material-UI and custom CSS, ensuring
+                      pixel-perfect, mobile-first designs.
+                    </li>
+                    <li>
+                      ✅Responsive Web Design expertise for optimal cross-device
+                      user experiences.
+                    </li>
+                    <li>
+                      ✅Proficient in Git and version control for efficient code
+                      management and collaboration.
+                    </li>
+                    <li>
+                      ✅Strong command of NodeJS, NextJS, and Express to create
+                      efficient and scalable web applications.
+                    </li>
+                    <li>
+                      ✅Extensive knowledge of web development, including modern
+                      technologies and best practices.
+                    </li>
+                    <li>
+                      ✅ Quick and enthusiastic learner, adept at rapidly
+                      assimilating new technologies and best practices to stay
+                      at the forefront of web development trends.
+                    </li>
+                  </ul>
+                  {renderMobile && (
+                    <div className="about-btn">
+                      <a
+                        href="https://drive.google.com/file/d/1UGhypHMJiw5DFfbtGWdtgPNg-YC9s93q/view?usp=share_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="outline-light">
+                          Download my CV
+                          <FaFilePdf size={25} />
+                        </Button>
+                      </a>
+                      <a
+                        href="https://drive.google.com/file/d/1Hxr1zkIIntRzVSyCQYVh6cT7C_bFHNog/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="outline-light">
+                          Review my last recommendation
+                          <FaFilePdf size={25} />
+                        </Button>
+                      </a>
+                    </div>
+                  )}
                 </div>
               )}
             </TrackVisibility>

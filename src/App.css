@@ -1,5 +1,5 @@
 /************ Custom Font ************/
-/* @font-face {
+@font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Bold.ttf");
   font-weight: 700;
@@ -13,7 +13,7 @@
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Book.ttf");
   font-weight: 400;
-} */
+}
 
 /************ Default Css ************/
 * {
@@ -97,6 +97,7 @@ p.success {
 p.danger {
   color: red;
 }
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -281,12 +282,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 160px 0 50px 0;
-  background-position: top center;
+  /* background-position: top center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
-.banner a {
+.banner a,
+.about a {
   text-decoration: none;
   color: #b8b8b8;
   letter-spacing: 0.8px;
@@ -314,8 +316,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1 {
-  font-size: 65px;
+.banner h1,
+.about h1 {
+  font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -324,17 +327,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
   color: #b8b8b8;
+  color: white;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
   padding: 1rem 0;
 }
+
+.about ul {
+  padding: 1rem 0;
+}
+
+.about li {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  list-style: none;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.about-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .banner button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.about button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 0;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -382,7 +415,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media (max-width: 500px) {
   .react-multiple-carousel__arrow {
-    bottom: -1rem !important;
+    bottom: -0.8rem !important;
   }
 
   .react-multiple-carousel__arrow--right {
@@ -447,7 +480,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 60px 0;
+  padding: 60px 0 40px 0;
   position: relative;
   background-color: rgba(19, 17, 17, 0.645);
   border-radius: 64px;
@@ -520,6 +553,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .card {
   height: 400px !important;
   height: 29rem !important;
+  border-radius: 1rem !important;
 }
 
 .card-header {

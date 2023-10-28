@@ -87,6 +87,16 @@ export const ExtraAbout = () => {
                     <FaFilePdf size={25} />
                   </Button>
                 </a>
+                <a
+                  href="https://drive.google.com/file/d/1Hxr1zkIIntRzVSyCQYVh6cT7C_bFHNog/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline-light">
+                    Review my last recommendation
+                    <FaFilePdf size={25} />
+                  </Button>
+                </a>
               </div>
             )}
           </Col>
@@ -149,6 +159,16 @@ export const ExtraAbout = () => {
                       >
                         <Button variant="outline-light">
                           Download my CV
+                          <FaFilePdf size={25} />
+                        </Button>
+                      </a>
+                      <a
+                        href="https://drive.google.com/file/d/1Hxr1zkIIntRzVSyCQYVh6cT7C_bFHNog/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="outline-light">
+                          Review my last recommendation
                           <FaFilePdf size={25} />
                         </Button>
                       </a>

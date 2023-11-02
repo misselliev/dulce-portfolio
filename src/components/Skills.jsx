@@ -16,6 +16,7 @@ import sassIcon from "../assets/img/sassIcon.svg";
 import semanticIcon from "../assets/img/semanticIcon.svg";
 import tailwindIcon from "../assets/img/tailwindIcon.svg";
 import materialIcon from "../assets/img/materialIcon.svg";
+import storybookIcon from "../assets/img/storybookIcon.svg";
 
 export const Skills = () => {
   const responsive = {
@@ -100,6 +101,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={bootstrapIcon} alt="Image" />
                   <h5>Bootstrap</h5>
+                </div>
+                <div className="item">
+                  <img src={storybookIcon} alt="Image" />
+                  <h5>Storybook</h5>
                 </div>
               </Carousel>
             </div>

@@ -78,7 +78,7 @@ export const ExtraAbout = () => {
             {!renderMobile && (
               <div className="about-btn">
                 <a
-                  href="https://drive.google.com/file/d/1UGhypHMJiw5DFfbtGWdtgPNg-YC9s93q/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1VY2-QTCQ3bvU-OKeyHgcdA6Xt6CO9HV4/view?usp=share_link"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

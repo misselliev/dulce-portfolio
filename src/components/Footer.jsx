@@ -26,6 +26,13 @@ export const Footer = () => {
               >
                 <img src={githubWhite} alt="Github Icon" />
               </a>
+              <a
+                href="https://github.com/elivillalejos"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={githubWhite} alt="Github Icon" />
+              </a>
               <a href="mailto:elizabeth.villalejos@gmail.com?subject=Lets%20Connect">
                 <img src={mailIcon} alt="Compose Email Icon" />
               </a>

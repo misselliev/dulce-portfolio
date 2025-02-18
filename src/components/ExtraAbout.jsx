@@ -153,7 +153,7 @@ export const ExtraAbout = () => {
                   {renderMobile && (
                     <div className="about-btn">
                       <a
-                        href="https://drive.google.com/file/d/1UGhypHMJiw5DFfbtGWdtgPNg-YC9s93q/view?usp=share_link"
+                        href="https://drive.google.com/file/d/1Qisf0TDfFBeQQQCy5mWbQzTgoQ6CLqnR/view?usp=drivesdk"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
